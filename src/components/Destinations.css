@@ -1,0 +1,86 @@
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.destination-card {
+  background: var(--white);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.destination-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+.destination-img-container {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.destination-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.destination-card:hover .destination-img {
+  transform: scale(1.1);
+}
+
+.destination-price {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: var(--shadow-md);
+}
+
+.destination-info {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.destination-location {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-dark);
+}
+
+.destination-location h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: var(--text-dark);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.destination-location svg {
+  color: var(--secondary-color);
+}
+
+.dest-btn {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  padding: 8px 20px;
+  font-size: 0.9rem;
+}
+
+.destination-card:hover .dest-btn {
+  background: var(--primary-color);
+  color: var(--white) !important;
+}
