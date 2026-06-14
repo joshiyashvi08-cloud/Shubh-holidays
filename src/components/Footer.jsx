@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="social-links">
               <a href="#"><FaFacebook size={20} /></a>
               <a href="#"><FaTwitter size={20} /></a>
-              <a href="#"><FaInstagram size={20} /></a>
+              <a href="https://www.instagram.com/shubh.holidays_" target="_blank" rel="noopener noreferrer"><FaInstagram size={20} /></a>
               <a href="#"><FaLinkedin size={20} /></a>
             </div>
           </div>

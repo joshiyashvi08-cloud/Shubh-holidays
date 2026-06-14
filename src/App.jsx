@@ -1,25 +1,19 @@
 import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import Destinations from './components/Destinations';
-import WhyChooseUs from './components/WhyChooseUs';
-import Contact from './components/Contact';
-import WhatsAppButton from './components/WhatsAppButton';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import DestinationDetails from './pages/DestinationDetails';
+
+import ReviewPage from './pages/ReviewPage';
 
 function App() {
   return (
-    <>
-      <Header />
-      <Hero />
-      <Services />
-      <Destinations />
-      <WhyChooseUs />
-      <Contact />
-      <Footer />
-      <WhatsAppButton />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/destination/:id" element={<DestinationDetails />} />
+        <Route path="/review" element={<ReviewPage />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import './Contact.css';
 
 const Contact = () => {
@@ -22,7 +22,7 @@ const Contact = () => {
               <div className="info-icon"><MapPin size={24} /></div>
               <div>
                 <h3>Our Location</h3>
-                <p>123 Travel Avenue, Wanderlust City<br/>Earth, 45678</p>
+                <p>J K Chowk, Shyamal Infinity,<br/>University Road, Rajkot.</p>
               </div>
             </div>
             
@@ -30,7 +30,7 @@ const Contact = () => {
               <div className="info-icon"><Phone size={24} /></div>
               <div>
                 <h3>Call Us</h3>
-                <p>+91 98765 43210<br/>+91 87654 32109</p>
+                <p>+91 92654 13092</p>
               </div>
             </div>
             
@@ -38,7 +38,15 @@ const Contact = () => {
               <div className="info-icon"><Mail size={24} /></div>
               <div>
                 <h3>Email Us</h3>
-                <p>info@shubhholidays.com<br/>support@shubhholidays.com</p>
+                <p>shubhholiday20@gmail.com</p>
+              </div>
+            </div>
+
+            <div className="info-item">
+              <div className="info-icon"><Clock size={24} /></div>
+              <div>
+                <h3>Office Timings</h3>
+                <p>10 AM to 8 PM</p>
               </div>
             </div>
           </motion.div>

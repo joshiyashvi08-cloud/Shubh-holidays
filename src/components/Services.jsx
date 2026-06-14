@@ -1,15 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Plane, Compass, Map, Camera, Umbrella, Coffee } from 'lucide-react';
+import { Book, FileCheck, Plane, Hotel, Briefcase, Globe, Users, Mountain } from 'lucide-react';
 import './Services.css';
 
 const servicesData = [
+  { icon: Book, title: 'Passport', description: 'Hassle-free passport application and renewal services.' },
+  { icon: FileCheck, title: 'Visa', description: 'Expert assistance for quick and reliable visa processing.' },
   { icon: Plane, title: 'Flight Booking', description: 'Seamless and affordable flight bookings worldwide.' },
-  { icon: Compass, title: 'Custom Itineraries', description: 'Personalized travel plans crafted just for you.' },
-  { icon: Map, title: 'Guided Tours', description: 'Expert-led tours to uncover hidden gems securely.' },
-  { icon: Camera, title: 'Photography Trips', description: 'Capture breathtaking moments with our specialized trips.' },
-  { icon: Umbrella, title: 'Beach Holidays', description: 'Relax and unwind at the most beautiful beaches.' },
-  { icon: Coffee, title: 'Culinary Experiences', description: 'Taste the world with our exclusive food tours.' },
+  { icon: Hotel, title: 'Hotel Booking', description: 'Comfortable and luxurious stays tailored to your budget.' },
+  { icon: Briefcase, title: 'Corporate Tour', description: 'Professionally managed travel for corporate groups.' },
+  { icon: Globe, title: 'Domestic & International Holiday Packages', description: 'Exciting holiday packages across the globe.' },
+  { icon: Users, title: 'Group Booking', description: 'Specialized arrangements for large groups and families.' },
+  { icon: Mountain, title: 'Adventure & Trekking', description: 'Thrilling adventure trips and trekking expeditions.' },
 ];
 
 const Services = () => {
