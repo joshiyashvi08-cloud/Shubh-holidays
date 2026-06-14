@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Star, CheckCircle } from 'lucide-react';
-import { destinationDB } from './DestinationDetails';
+import { destinationDB } from '../data/destinationDB';
 import './ReviewPage.css';
 
 const ReviewPage = () => {
@@ -54,7 +54,12 @@ const ReviewPage = () => {
 
     // Save to localStorage under the matched ID, or fallback to exactly what they typed
     const storageKey = `shubh_reviews_${matchedId || searchStr.replace(/\s+/g, '-')}`;
-    const existingReviews = JSON.parse(localStorage.getItem(storageKey) || '[]');
+    let existingReviews = [];
+    try {
+      existingReviews = JSON.parse(localStorage.getItem(storageKey) || '[]');
+    } catch (e) {
+      existingReviews = [];
+    }
     existingReviews.unshift(newReview);
     localStorage.setItem(storageKey, JSON.stringify(existingReviews));
 
